@@ -3,7 +3,7 @@ import { ArrowRight, Star, Users, Award } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="inicio" className="pt-16 bg-gradient-to-br from-unam-blue via-blue-700 to-blue-900 relative overflow-hidden">
+    <section id="inicio" className="pt-48 bg-gradient-to-br from-unam-blue via-blue-700 to-blue-900 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-hero-pattern opacity-10"></div>
       

@@ -83,7 +83,7 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-unam-gold mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-gray-300">Facultad de Química</p>
-                  <p className="text-gray-400 text-sm">Ciudad Universitaria</p>
+                  <p className="text-gray-400 text-sm">Sede Tacuba</p>
                   <p className="text-gray-400 text-sm">Ciudad de México</p>
                 </div>
               </div>
@@ -93,7 +93,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-unam-gold flex-shrink-0" />
-                <span className="text-gray-300">dad@quimica.unam.mx</span>
+                <span className="text-gray-300">dad@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Globe className="w-5 h-5 text-unam-gold flex-shrink-0" />

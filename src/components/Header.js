@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { Menu, X, GraduationCap, Sun, Moon } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 import { DarkModeContext } from '../App';
 
 const Header = () => {
@@ -19,18 +19,35 @@ const Header = () => {
       darkMode ? 'bg-gray-900/95 text-white' : 'bg-white/95 text-gray-900'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <div className="flex items-center justify-center w-10 h-10 bg-unam-blue rounded-lg">
-              <GraduationCap className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <h1 className="text-lg font-bold text-unam-blue">DAD</h1>
-              <p className={`text-xs ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>FQ UNAM</p>
-            </div>
+        {/* Primera fila: Logos y controles */}
+        <div className="flex justify-between items-center h-36">
+          {/* Logo UNAM - Extrema Izquierda */}
+          <div className="flex items-center">
+            <img 
+              src="/png-transparent-unam-hd-logo-thumbnail.png" 
+              alt="Logo UNAM" 
+              className="h-32 w-auto"
+            />
           </div>
 
+          {/* Centro - Título del Programa */}
+          <div className="hidden sm:block text-center">
+            <h1 className="text-lg font-bold text-unam-blue">DAD</h1>
+            <p className={`text-xs ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>FQ UNAM</p>
+          </div>
+
+          {/* Logo Facultad de Química - Extrema Derecha */}
+          <div className="flex items-center">
+            <img 
+              src="/images.png" 
+              alt="Logo Facultad de Química" 
+              className="h-32 w-auto"
+            />
+          </div>
+        </div>
+
+        {/* Segunda fila: Navegación y controles */}
+        <div className="flex justify-between items-center h-12 border-t border-gray-200 dark:border-gray-700">
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {menuItems.map((item) => (
