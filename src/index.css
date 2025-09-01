@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  /* Transiciones suaves para modo oscuro */
+  * {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-unam-blue hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-unam-blue font-semibold py-3 px-6 rounded-lg border-2 border-unam-blue transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  }
+  
+  .card {
+    @apply rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1;
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-br from-unam-blue via-blue-700 to-blue-900;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-unam-gold to-yellow-500 bg-clip-text text-transparent;
+  }
+
+  /* Estilos específicos para modo oscuro */
+  .dark .card {
+    @apply bg-gray-700 hover:bg-gray-600;
+  }
+
+  .dark .btn-secondary {
+    @apply bg-gray-700 hover:bg-gray-600 text-white border-gray-600;
+  }
+
+
+}
