@@ -32,9 +32,9 @@ const TargetAudience = () => {
     'Título profesional por especialización',
     'Metodología del caso de Harvard',
     'Red de networking con egresados',
-    'Certificación oficial UNAM',
-    'Horarios flexibles y modalidad mixta',
-    'Profesores con experiencia empresarial'
+    'Diploma oficial UNAM',
+    'Horarios accesibles y modalidad mixta',
+    'Profesores con amplia experiencia empresarial'
   ];
 
   return (

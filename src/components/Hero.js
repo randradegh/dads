@@ -21,8 +21,11 @@ const Hero = () => {
                 <span className="text-gradient">Alta Dirección</span>
               </h1>
               <p className="text-xl md:text-2xl text-blue-100 leading-relaxed">
-                Forma parte de la élite de directivos y consultores de alto nivel. 
-                Desarrolla habilidades estratégicas en la Facultad de Química de la UNAM.
+                Forma parte de la élite de directivos y consultores de alto nivel, al concluir estos Diplomados podrás participar en los procesos de toma de decisiones y de
+                formulación e implantación de estrategias en cualuiqe empresa. 
+              </p>
+              <p className="text-xl md:text-2xl text-blue-100 leading-relaxed">
+                ¡Desarrolla tus habilidades estratégicas en la Facultad de Química de la UNAM!
               </p>
             </div>
 

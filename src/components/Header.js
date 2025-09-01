@@ -32,8 +32,8 @@ const Header = () => {
 
           {/* Centro - Título del Programa */}
           <div className="hidden sm:block text-center">
-            <h1 className="text-lg font-bold text-unam-blue">DAD</h1>
-            <p className={`text-xs ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>FQ UNAM</p>
+            <h1 className="text-3xl font-bold text-unam-blue">Diplomados en Alta Dirección</h1>
+            <p className={`text-xl ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Facultad de Química UNAM</p>
           </div>
 
           {/* Logo Facultad de Química - Extrema Derecha */}
@@ -47,15 +47,17 @@ const Header = () => {
         </div>
 
         {/* Segunda fila: Navegación y controles */}
-        <div className="flex justify-between items-center h-12 border-t border-gray-200 dark:border-gray-700">
+        <div className="flex justify-between items-center h-16 border-t border-gray-200 dark:border-gray-700 bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900">
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-8 px-6">
             {menuItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className={`font-medium transition-colors duration-200 ${
-                  darkMode ? 'text-gray-300 hover:text-unam-gold' : 'text-gray-700 hover:text-unam-blue'
+                className={`font-semibold text-lg px-4 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 ${
+                  darkMode 
+                    ? 'text-gray-200 hover:text-white hover:bg-gray-700 hover:shadow-lg' 
+                    : 'text-gray-700 hover:text-unam-blue hover:bg-white hover:shadow-lg'
                 }`}
               >
                 {item.name}
@@ -117,23 +119,25 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className={`px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t transition-colors duration-300 ${
-              darkMode ? 'bg-gray-900 border-gray-700' : 'bg-white border-gray-200'
+            <div className={`px-4 pt-4 pb-4 space-y-2 border-t transition-colors duration-300 ${
+              darkMode ? 'bg-gray-800 border-gray-700' : 'bg-gray-50 border-gray-200'
             }`}>
               {menuItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className={`block px-3 py-2 font-medium transition-colors duration-200 ${
-                    darkMode ? 'text-gray-300 hover:text-unam-gold' : 'text-gray-700 hover:text-unam-blue'
+                  className={`block px-4 py-3 font-semibold text-lg rounded-lg transition-all duration-300 ${
+                    darkMode 
+                      ? 'text-gray-200 hover:text-white hover:bg-gray-700' 
+                      : 'text-gray-700 hover:text-unam-blue hover:bg-white'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
-              <div className="px-3 py-2">
-                <button className="btn-primary w-full">
+              <div className="px-4 py-3">
+                <button className="btn-primary w-full text-lg py-3">
                   ¡Inscríbete Ahora!
                 </button>
               </div>

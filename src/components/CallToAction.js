@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Phone, Mail, Calendar, Star, Users, Award } from 'lucide-react';
+import { ArrowRight, Calendar, Star, Users, Award } from 'lucide-react';
 
 const CallToAction = () => {
   const urgencyElements = [
@@ -55,13 +55,12 @@ const CallToAction = () => {
         </div>
 
         {/* Main CTA Section */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div className="space-y-8">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <h3 className="text-2xl font-bold text-white mb-6">
-                ¿Listo para dar el siguiente paso?
-              </h3>
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+            <h3 className="text-2xl font-bold text-white mb-6 text-center">
+              ¿Listo para dar el siguiente paso?
+            </h3>
+            <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-unam-gold rounded-full"></div>
@@ -71,6 +70,8 @@ const CallToAction = () => {
                   <div className="w-2 h-2 bg-unam-gold rounded-full"></div>
                   <span className="text-blue-100">Juntas informativas en febrero</span>
                 </div>
+              </div>
+              <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-unam-gold rounded-full"></div>
                   <span className="text-blue-100">Cupos limitados por diplomado</span>
@@ -79,89 +80,6 @@ const CallToAction = () => {
                   <div className="w-2 h-2 bg-unam-gold rounded-full"></div>
                   <span className="text-blue-100">Descuentos por inscripción anticipada</span>
                 </div>
-              </div>
-            </div>
-
-            <div className="bg-unam-gold rounded-2xl p-8 text-unam-blue">
-              <h3 className="text-2xl font-bold mb-4">
-                ¡Oferta Especial de Lanzamiento!
-              </h3>
-              <p className="text-lg mb-6">
-                Inscríbete antes del 31 de enero y obtén un descuento especial 
-                en la matrícula del diplomado de tu elección.
-              </p>
-              <div className="text-center">
-                <div className="text-4xl font-bold mb-2">20%</div>
-                <div className="text-lg font-semibold">de descuento</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Content - Contact Form */}
-          <div className="bg-white rounded-2xl p-8 shadow-2xl">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-              Solicita Información
-            </h3>
-            <form className="space-y-6">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Nombre Completo
-                </label>
-                <input
-                  type="text"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-unam-blue focus:border-transparent"
-                  placeholder="Tu nombre completo"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Correo Electrónico
-                </label>
-                <input
-                  type="email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-unam-blue focus:border-transparent"
-                  placeholder="tu@email.com"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Teléfono
-                </label>
-                <input
-                  type="tel"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-unam-blue focus:border-transparent"
-                  placeholder="(55) 1234-5678"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Diplomado de Interés
-                </label>
-                <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-unam-blue focus:border-transparent">
-                  <option>Selecciona un diplomado</option>
-                  <option>Administración Financiera</option>
-                  <option>Procesos de Negocios</option>
-                  <option>Desarrollo Organizacional y Personal</option>
-                </select>
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-unam-blue hover:bg-blue-800 text-white font-bold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
-              >
-                <span>¡Solicitar Información!</span>
-                <ArrowRight className="w-5 h-5" />
-              </button>
-            </form>
-
-            {/* Contact Info */}
-            <div className="mt-8 pt-6 border-t border-gray-200">
-              <div className="flex items-center space-x-3 mb-3">
-                <Phone className="w-5 h-5 text-unam-blue" />
-                <span className="text-gray-600">(55) 5622-XXXX</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-unam-blue" />
-                <span className="text-gray-600">dad@quimica.unam.mx</span>
               </div>
             </div>
           </div>
