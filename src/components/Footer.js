@@ -28,16 +28,16 @@ const Footer = () => {
               de Harvard Business School. Certificación oficial de la Facultad de Química de la UNAM.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-unam-gold transition-colors">
+              <a href="https://facebook.com/unam" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-unam-gold transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-unam-gold transition-colors">
+              <a href="https://twitter.com/unam" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-unam-gold transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-unam-gold transition-colors">
+              <a href="https://linkedin.com/company/unam" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-unam-gold transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-unam-gold transition-colors">
+              <a href="https://instagram.com/unam" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-unam-gold transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
@@ -111,13 +111,13 @@ const Footer = () => {
               Todos los derechos reservados.
             </div>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-unam-gold transition-colors">
+              <a href="/privacidad" className="text-gray-400 hover:text-unam-gold transition-colors">
                 Política de Privacidad
               </a>
-              <a href="#" className="text-gray-400 hover:text-unam-gold transition-colors">
+              <a href="/terminos" className="text-gray-400 hover:text-unam-gold transition-colors">
                 Términos de Uso
               </a>
-              <a href="#" className="text-gray-400 hover:text-unam-gold transition-colors">
+              <a href="/aviso-legal" className="text-gray-400 hover:text-unam-gold transition-colors">
                 Aviso Legal
               </a>
             </div>
