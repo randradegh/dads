@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Star, Users, Award } from 'lucide-react';
+import { Star, Award } from 'lucide-react';
 
 const Hero = () => {
   return (
