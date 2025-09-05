@@ -87,17 +87,23 @@ const Footer = () => {
                   <p className="text-gray-400 text-sm">Ciudad de México</p>
                 </div>
               </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-unam-gold flex-shrink-0" />
-                <span className="text-gray-300">(55) 5622-XXXX</span>
+              <div className="flex items-start space-x-3">
+                <Phone className="w-5 h-5 text-unam-gold mt-1 flex-shrink-0" />
+                <div>
+                  <p className="text-gray-300">55 5623 3099 y 55 5622 4800</p>
+                  <p className="text-gray-400 text-sm">Exts. 83337 y 83336</p>
+                </div>
               </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-unam-gold flex-shrink-0" />
-                <span className="text-gray-300">dad@gmail.com</span>
+              <div className="flex items-start space-x-3">
+                <Mail className="w-5 h-5 text-unam-gold mt-1 flex-shrink-0" />
+                <div>
+                  <p className="text-gray-300">dad.dpn.unam@gmail.com</p>
+                  <p className="text-gray-300">maestriaaltadireccionfq@quimica.unam.mx</p>
+                </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Globe className="w-5 h-5 text-unam-gold flex-shrink-0" />
-                <span className="text-gray-300">www.quimica.unam.mx</span>
+                <span className="text-gray-300">https://quimica.unam.mx/ensenanza/educacion-continua/diplomados/</span>
               </div>
             </div>
           </div>

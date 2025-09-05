@@ -91,11 +91,11 @@ const ProgramOverview = () => {
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-unam-gold rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Red de networking con más de 500 egresados</span>
+                  <span>Red de networking con los egresados</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-unam-gold rounded-full mt-2 flex-shrink-0"></div>
-                  <span>Certificación oficial de la Máxima Casa de Estudios de México</span>
+                  <span>Diplomado oficial de la Máxima Casa de Estudios de México</span>
                 </li>
               </ul>
             </div>

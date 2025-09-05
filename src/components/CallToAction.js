@@ -97,13 +97,9 @@ const CallToAction = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-unam-gold hover:bg-yellow-500 text-unam-blue font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2">
-                <span>¡Inscríbete Ahora!</span>
+                <span>¡Pide Informes Ahora!</span>
                 <ArrowRight className="w-5 h-5" />
-              </button>
-              <button className="bg-white/10 hover:bg-white/20 text-white font-semibold py-4 px-8 rounded-lg border-2 border-white/30 transition-all duration-300 flex items-center justify-center space-x-2">
-                <span>Descargar Folleto</span>
-                <ArrowRight className="w-5 h-5" />
-              </button>
+              </button>              
             </div>
           </div>
         </div>

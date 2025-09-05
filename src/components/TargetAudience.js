@@ -51,9 +51,15 @@ const TargetAudience = () => {
           <p className={`text-xl max-w-3xl mx-auto ${
             darkMode ? 'text-gray-300' : 'text-gray-600'
           }`}>
-            Este programa está diseñado específicamente para estudiantes de la Facultad de Química 
+            Este programa está diseñado para estudiantes de la Facultad de Química 
             que están por concluir sus carreras académicas y desean obtener su título profesional 
             mediante la especialización en alguna de las áreas de alta dirección.
+          </p>
+          <br />
+          <p className={`text-xl max-w-3xl mx-auto ${
+            darkMode ? 'text-gray-300' : 'text-gray-600'
+          }`}>
+            También es ideal para estudiantes de otras facultades y profesionales que desean especializarse en alguna de las áreas de alta dirección.
           </p>
         </div>
 
@@ -182,8 +188,13 @@ const TargetAudience = () => {
               Si eres estudiante de la Facultad de Química y buscas especializarte en alta dirección, 
               este programa es perfecto para ti.
             </p>
+            <p className="text-lg mb-6 text-blue-100">
+              Además, si eres estudiante de otra facultad o profesional que busca especializarse en alguna de las áreas de alta dirección, esta es una excelente oportunidad para ampliar
+              tus conocimientos y habilidades para especializarse en alguna de las áreas de alta dirección.
+            </p>
+
             <button className="bg-unam-gold hover:bg-yellow-500 text-unam-blue font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-              ¡Solicita Información Ahora!
+              ¡Aprovecha esta fabulosa opción académica!
             </button>
           </div>
         </div>

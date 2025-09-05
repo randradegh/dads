@@ -22,7 +22,7 @@ const Hero = () => {
               </h1>
               <p className="text-xl md:text-2xl text-blue-100 leading-relaxed">
                 Forma parte de la élite de directivos y consultores de alto nivel, al concluir estos Diplomados podrás participar en los procesos de toma de decisiones y de
-                formulación e implantación de estrategias en cualuiqe empresa. 
+                formulación e implantación de estrategias en cualquiera empresa u organización. 
               </p>
               <p className="text-xl md:text-2xl text-blue-100 leading-relaxed">
                 ¡Desarrolla tus habilidades estratégicas en la Facultad de Química de la UNAM!
@@ -42,30 +42,6 @@ const Hero = () => {
               <div className="text-center">
                 <div className="text-3xl font-bold text-unam-gold">3</div>
                 <div className="text-sm text-blue-200">Diplomados</div>
-              </div>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-unam-gold hover:bg-yellow-500 text-unam-blue font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2">
-                <span>¡Inscríbete Ahora!</span>
-                <ArrowRight className="w-5 h-5" />
-              </button>
-              <button className="bg-white/10 hover:bg-white/20 text-white font-semibold py-4 px-8 rounded-lg border-2 border-white/30 transition-all duration-300 flex items-center justify-center space-x-2">
-                <span>Conoce Más</span>
-                <ArrowRight className="w-5 h-5" />
-              </button>
-            </div>
-
-            {/* Trust Indicators */}
-            <div className="flex items-center space-x-6 pt-4">
-              <div className="flex items-center space-x-2">
-                <Award className="w-5 h-5 text-unam-gold" />
-                <span className="text-blue-200">UNAM Certificado</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Users className="w-5 h-5 text-unam-gold" />
-                <span className="text-blue-200">+500 Egresados</span>
               </div>
             </div>
           </div>
